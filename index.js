@@ -5,7 +5,7 @@ function getRepositories() {
   req.send()
 }
 
-function showRepositories(event, data) {
+function showRepositories() {
   console.log(data)
   const repos = JSON.parse(this.responseText)
   const src = document.getElementById("repository-template").innerHTML
